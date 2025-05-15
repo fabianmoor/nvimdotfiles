@@ -7,10 +7,13 @@ return {
   -- },
   {
     "catppuccin/nvim",
-    lazy = false,
-    priority = 1000,
-    name = "catppuccin",
+    lazy = true,
+    -- priority = 1000,
+    -- name = "catppuccin",
   },
+  {
+    "rebelot/kanagawa.nvim"
+  }
   -- {
   --   "scottmckendry/cyberdream.nvim",
   --   -- lazy = false,

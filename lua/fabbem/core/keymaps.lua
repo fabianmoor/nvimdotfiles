@@ -36,3 +36,5 @@ keymap.set("n", "<leader>v", "<cmd>CodeCompanionActions<cr>", { noremap = true, 
 
 -- LazyGit
 keymap.set("n", "<leader>lg", function() vim.cmd("LazyGit") end, { desc = "Open LazyGit" })
+
+keymap.set("n", "<leader>tt", function() vim.cmd("Themery") end, { desc = "Open Themery" })
