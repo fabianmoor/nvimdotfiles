@@ -10,7 +10,20 @@ return {
         {
           name = "Kanagawa",
           colorscheme = "kanagawa"
-        }},
+        },
+        {
+          name = "CyberDream",
+          colorscheme = "cyberdream",
+        },
+        {
+          name = "sonokai",
+          colorscheme = "sonokai"
+        },
+        {
+          name = "Nordic",
+          colorscheme = "nordic"
+        }
+      },
       })
     end
   }

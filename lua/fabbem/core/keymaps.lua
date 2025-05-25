@@ -34,7 +34,50 @@ keymap.set("t", "<D-Space>", function() vim.cmd("FloatermToggle") end, { desc = 
 
 keymap.set("n", "<leader>v", "<cmd>CodeCompanionActions<cr>", { noremap = true, silent = true })
 
+keymap.set("n", "<Leader>q", "<CMD>:Bdelete<CR>", { desc = "Close buffer" })
+
 -- LazyGit
 keymap.set("n", "<leader>lg", function() vim.cmd("LazyGit") end, { desc = "Open LazyGit" })
 
 keymap.set("n", "<leader>tt", function() vim.cmd("Themery") end, { desc = "Open Themery" })
+
+keymap.set("n", "<leader>lf", ":lua require('telescope').extensions.live_grep_args.live_grep_args()<CR>")
+
+-- Indent current line with Tab in normal mode
+keymap.set("n", "<Tab>", ">>", { desc = "Indent current line" })
+
+-- De-indent current line with Shift+Tab in normal mode
+keymap.set("n", "<S-Tab>", "<<", { desc = "De-indent current line" })
+
+-- Indent visual selection with Tab in visual mode
+keymap.set("v", "<Tab>", ">", { desc = "Indent visual selection" })
+
+-- De-indent visual selection with Shift+Tab in visual mode
+keymap.set("v", "<S-Tab>", "<", { desc = "De-indent visual selection" })
+
+
+keymap.set('n', ':', '<cmd>FineCmdline<CR>', { noremap = true, silent = true })
+
+
+
+
+-- Assuming 'keymap.set' is an alias for 'vim.keymap.set'.
+-- If not, use 'vim.keymap.set' directly.
+
+-- Go to next diagnostic (Warning or Error), wrap around file, and show in float
+keymap.set("n", "J", function()
+  vim.diagnostic.goto_next({
+    severity = {min = vim.diagnostic.severity.WARN},
+    wrap = true,
+    float = true
+  })
+end, { desc = "Go to next warning/error" })
+
+-- Go to previous diagnostic (Warning or Error), wrap around file, and show in float
+keymap.set("n", "K", function()
+  vim.diagnostic.goto_prev({
+    severity = {min = vim.diagnostic.severity.WARN},
+    wrap = true,
+    float = true
+  })
+end, { desc = "Go to previous warning/error" })
