@@ -56,10 +56,10 @@ keymap.set("v", "<Tab>", ">", { desc = "Indent visual selection" })
 keymap.set("v", "<S-Tab>", "<", { desc = "De-indent visual selection" })
 
 
-keymap.set('n', ':', '<cmd>FineCmdline<CR>', { noremap = true, silent = true })
 
+keymap.set('n', '<leader>bb', '<cmd>BlameToggle<CR>')
 
-
+vim.keymap.set("n", "<Right>", '<cmd>AerialToggle right<CR>', {noremap = true, silent = true, desc = "Toggle Aerial left (focus)"})
 
 -- Assuming 'keymap.set' is an alias for 'vim.keymap.set'.
 -- If not, use 'vim.keymap.set' directly.
