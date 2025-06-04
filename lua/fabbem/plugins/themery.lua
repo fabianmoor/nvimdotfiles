@@ -22,6 +22,18 @@ return {
         {
           name = "Nordic",
           colorscheme = "nordic"
+        },
+        {
+          name = "Tokyonight",
+          colorscheme = "tokyonight"
+        },
+        {
+          name = "Vogue",
+          colorscheme = "vague"
+        },
+        {
+          name = "yorumi",
+          colorscheme = "yorumi"
         }
       },
       })

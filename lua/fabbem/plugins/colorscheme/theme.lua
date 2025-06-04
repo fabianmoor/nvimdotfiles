@@ -14,4 +14,13 @@ return {
   {
     "AlexvZyl/nordic.nvim"
   },
+  {
+    "folke/tokyonight.nvim"
+  },
+  {
+    "vague2k/vague.nvim",
+  },
+  {
+    "yorumicolors/yorumi.nvim"
+  },
 }

@@ -32,6 +32,7 @@ return {
         "cssls",
         "lua_ls",
         "pyright",
+        "vue_ls",
       },
     })
 
