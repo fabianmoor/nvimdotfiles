@@ -28,6 +28,10 @@ return {
           colorscheme = "tokyonight"
         },
         {
+          name = "Tokyo Dat",
+          colorscheme = "tokyonight-day"
+        },
+        {
           name = "Vogue",
           colorscheme = "vague"
         },
