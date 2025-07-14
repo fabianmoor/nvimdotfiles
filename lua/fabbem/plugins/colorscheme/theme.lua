@@ -1,0 +1,26 @@
+return {
+  {
+    "catppuccin/nvim",
+  },
+  {
+    "rebelot/kanagawa.nvim"
+  },
+  {
+    "scottmckendry/cyberdream.nvim"
+  },
+  {
+    "sainnhe/sonokai"
+  },
+  {
+    "AlexvZyl/nordic.nvim"
+  },
+  {
+    "folke/tokyonight.nvim"
+  },
+  {
+    "vague2k/vague.nvim",
+  },
+  {
+    "yorumicolors/yorumi.nvim"
+  },
+}
